@@ -23,13 +23,14 @@ const ImagensContainer = styled.section`
 const Galeria = ({
   fotos = [],
   setTag,
+  setFiltro,
   aoFotoSelecionada,
   aoAlternarFavorito,
 }) => {
   return (
     <>
       <Tags setTag={setTag} />
-      <GaleriaContainer>
+      <GaleriaContainer setFiltro={setFiltro}>
         <SecaoFluida>
           <Titulo>Navegue pela galeria</Titulo>
           <ImagensContainer>
